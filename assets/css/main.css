@@ -3134,43 +3134,68 @@ input, select, textarea {
 					.carousel article .image {
 						margin-bottom: 2em;
 					}
-				/* Research topic cards */
-				.research-item {
-				    display: flex;
-				    align-items: center;
-				    gap: 1em;
-				    padding: 1em 0;
-				}
-				
-				.research-icon {
-				    flex: 0 0 70px;
-				}
-				
-				.research-icon img {
-				    display: block;
-				    width: 70px;
-				    height: 70px;
-				    object-fit: contain;
-				}
-				
-				.research-text {
-				    flex: 1;
-				}
-				
-				.research-text h4 {
-				    margin: 0 0 0.4em 0;
-				}
-				
-				.research-text p {
-				    margin: 0;
-				    font-size: 0.9em;
-				    line-height: 1.5em;
-				}
-				
-				/* Stack vertically on small screens */
-				@media screen and (max-width: 736px) {
-				    .research-item {
-				        margin-bottom: 1em;
-				    }
-				}
-	}
+/* Rare MZL research cards */
+
+.research-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    margin-top: 2em;
+}
+
+.research-card {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 180px;
+}
+
+.research-image {
+    width: 220px;
+    min-width: 220px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2em;
+}
+
+.research-image img {
+    max-width: 100%;
+    max-height: 180px;
+    width: auto;
+    height: auto;
+    display: block;
+}
+
+.research-content {
+    flex: 1;
+}
+
+.research-content h4 {
+    margin: 0 0 0.7em 0;
+}
+
+.research-content p {
+    margin: 0;
+    font-size: 0.95em;
+    line-height: 1.6em;
+}
+
+/* Mobile */
+@media screen and (max-width: 736px) {
+    .research-card {
+        align-items: flex-start;
+    }
+
+    .research-image {
+        width: 120px;
+        min-width: 120px;
+        height: 120px;
+        margin-right: 1em;
+    }
+
+    .research-image img {
+        max-height: 120px;
+    }
+}
