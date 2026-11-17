@@ -3134,5 +3134,43 @@ input, select, textarea {
 					.carousel article .image {
 						margin-bottom: 2em;
 					}
-
+				/* Research topic cards */
+				.research-item {
+				    display: flex;
+				    align-items: center;
+				    gap: 1em;
+				    padding: 1em 0;
+				}
+				
+				.research-icon {
+				    flex: 0 0 70px;
+				}
+				
+				.research-icon img {
+				    display: block;
+				    width: 70px;
+				    height: 70px;
+				    object-fit: contain;
+				}
+				
+				.research-text {
+				    flex: 1;
+				}
+				
+				.research-text h4 {
+				    margin: 0 0 0.4em 0;
+				}
+				
+				.research-text p {
+				    margin: 0;
+				    font-size: 0.9em;
+				    line-height: 1.5em;
+				}
+				
+				/* Stack vertically on small screens */
+				@media screen and (max-width: 736px) {
+				    .research-item {
+				        margin-bottom: 1em;
+				    }
+				}
 	}
